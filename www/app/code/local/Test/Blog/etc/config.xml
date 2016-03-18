@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Test_Blog>
+            <version>0.1.0</version>
+        </Test_Blog>
+    </modules>
+    <frontend>
+        <routers>
+            <blog>
+                <use>standard</use>
+                <args>
+                    <module>Test_Blog</module>
+                    <frontName>blog</frontName>
+                </args>
+            </blog>
+        </routers>
+    </frontend>
+</config>

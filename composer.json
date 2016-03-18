@@ -1,0 +1,27 @@
+{
+    "name": "madepeople/NV",
+    "description": "NV",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "aydin-hassan/magento-core-composer-installer": "^1.2",
+        "magento/magento": "v1.9.2.3"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:madepeople/magento-community.git"
+        }
+    ],
+    "extra":{
+        "magento-root-dir": "www/",
+        "auto-append-gitignore": true,
+        "magento-deploystrategy": "symlink"
+    },
+    "config": {
+        "secure-http": false
+    }
+}
