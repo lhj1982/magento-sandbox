@@ -12,6 +12,20 @@
             </employee>
         </helpers>
     </global>
+    <frontend>
+        <routers>
+            <employee>
+                <use>standard</use>
+                <args>
+                    <modules>
+                        <excellence_employee before="Mage_Customer">Excelence_Employee_Customer</excellence_employee>
+                    </modules>
+                    <module>Excellence_Employee</module>
+                    <frontName>employee</frontName>
+                </args>
+            </employee>
+        </routers>
+    </frontend>
     <adminhtml>
         <menu>
             <employee module="employee">

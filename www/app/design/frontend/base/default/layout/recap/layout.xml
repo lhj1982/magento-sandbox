@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="content">
+            <block type="training_recap/example" name="new.block" before="-">
+                <action method="setTemplate">
+                    <path>training/recap/one.phtml</path>
+                </action>
+            </block>
+        </reference>
+    </default>
+</layout>

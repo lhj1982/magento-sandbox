@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Training_Recap>
+            <version>0.1.1</version>
+        </Training_Recap>
+    </modules>
+    <global>
+        <resources>
+            <trainingrecap_setup>
+                <setup>
+                    <module>Training_Recap</module>
+                    <class>Training_Recap_Model_Resource_Setup</class>
+                </setup>
+            </trainingrecap_setup>
+        </resources>
+        <blocks>
+            <training_recap>
+                <class>Training_Recap_Block</class>
+            </training_recap>
+        </blocks>
+        <helpers>
+            <training_recap>
+                <class>Training_Recap_Helper</class>
+            </training_recap>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <recap>
+                <use>standard</use>
+                <args>
+                    <module>Training_Recap</module>
+                    <frontName>recap</frontName>
+                </args>
+            </recap>
+        </routers>
+        <layout>
+            <updates>
+                <practice module="Training_Recap">
+                    <file>recap/layout.xml</file>
+                </practice>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <training_recap before="Mage_Adminhtml">Training_Recap_Adminhtml</training_recap>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
